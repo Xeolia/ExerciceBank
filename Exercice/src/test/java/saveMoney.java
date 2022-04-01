@@ -3,10 +3,13 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class saveMoney {
+    private Person person;
+
     @Given("In order to save money")
     public void inOrderToSaveMoney() {
         person = new Person();
-        person.createPerson();
+        person.createAccount();
+
     }
 
     @When("As a bank client")
